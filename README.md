@@ -1,4 +1,4 @@
-#Simple html/css projects
+# Simple html/css projects
 
 These projects are from [FrontEndMentor](https://www.frontendmentor.io/)
 
