@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Intro component with sign up form</title>
+</head>
+
+<body>
+
+  <img class="background-img" src="src/images/bg-intro-desktop.png">
+  <img class="background-img-mob" src="src/images/bg-intro-mobile.png">
+
+  <div id="content">
+    <div id="left-part">
+      <div id="text-head">
+        Learn to code by watching others
+      </div>
+      <div id="text-main">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </div>
+    </div>
+
+    <div id="right-part">
+      <div id="text-try">
+        <span style="font-weight: 600;">Try it free 7 days</span> then $20/mo. thereafter
+      </div>
+
+      <div id="form-div">
+        <form id="form">
+          <input id="name" placeholder="Name">
+          <img class="error-icon" src="src/images/icon-error.svg" alt="error">
+          <span class="error-message">First Name cannot be empty</span>
+
+          <input id="last-name" placeholder="Last Name">
+          <img class="error-icon" src="src/images/icon-error.svg" alt="error">
+          <span class="error-message">Last Name cannot be empty</span>
+
+          <input id="email" type="email" placeholder="Email Address">
+          <img class="error-icon" src="src/images/icon-error.svg" alt="error">
+          <span class="error-message">Looks like this is not email</span>
+
+          <input id="password" type="password" placeholder="Password">
+          <img class="error-icon" src="src/images/icon-error.svg" alt="error">
+          <span class="error-message">Password cannot be empty</span>
+
+          <button id="claim-button">
+            <div>Claim your free trial</div>
+          </button>
+        </form>
+
+        <div id="agreement">By clicking the button, you are agreeing to our
+          <span style="color: orangered;font-weight: 600;">Terms and Services</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

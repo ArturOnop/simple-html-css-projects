@@ -1,0 +1,112 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+#main-text{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#main-text-title{
+    font-size: 35px;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+.thick-text{
+    font-weight: 600;
+}
+
+#main-text-description{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+.block{
+    width: 350px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 1px 10px hsl(229, 6%, 66%);;
+}
+
+.text-title{
+    font-weight: 600;
+    font-size: 20px;
+    color: hsl(234, 12%, 34%);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.text-description{
+    color: hsl(229, 6%, 66%);
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 250px;
+}
+
+img{
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#grid{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto 350px 30px 350px 30px 350px auto;
+    grid-template-rows: 122px 122px 30px 122px 122px;
+}
+
+#cyan-block{
+    border-top: hsl(180, 62%, 55%) solid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    height: 244px;
+}
+
+#red-block{
+    border-top: hsl(0, 78%, 62%) solid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#orange-block{
+    border-top: hsl(34, 97%, 64%) solid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#blue-block{
+    border-top: hsl(212, 86%, 64%) solid;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    height: 244px;
+}
+
+@media (max-width: 1100px) {
+    #grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block{
+        margin-top: 30px;
+    }
+}
